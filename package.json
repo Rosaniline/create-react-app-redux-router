@@ -1,0 +1,36 @@
+{
+  "name": "skyeye-react",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost",
+  "devDependencies": {
+    "react-scripts": "1.0.6",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-log-monitor": "^1.3.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.18.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-list": "^0.8.6",
+    "react-loadable": "^4.0.3",
+    "react-prefixr": "^0.1.0",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "react-transition-group": "^1.2.0",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.4.0",
+    "redux-persist": "^4.8.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ react-scripts start",
+    "build": "NODE_PATH=src/ react-scripts build && cp -r build ../nginx/",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
